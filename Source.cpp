@@ -11,60 +11,60 @@ int main() {
 
 	while (true) {		
 
-		std::cout << "Ââåäèòå íîìåğ ìåñÿöà: ";
+		std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ¼ĞµÑÑÑ†Ğ°: ";
 		std::cin >> x;
 		
 		if (std::cin.fail()) {
 			std::cin.clear();
 			std::cin.ignore(std::numeric_limits<int>::max(), '\n');
-			std::cout << "Íåîáõîäèìî ââåñòè ÷èñëî!" << std::endl;
+			std::cout << "ĞĞµĞ¾Ğ±Ñ…Ğ¾Ğ´Ğ¸Ğ¼Ğ¾ Ğ²Ğ²ĞµÑÑ‚Ğ¸ Ñ‡Ğ¸ÑĞ»Ğ¾!" << std::endl;
 			continue;
 		}
 		if (x == 0) {
 			break;
 		}
 		if (x < 0 || x > 12) {
-			std::cout << "×èñëî äîëæíî áûòü îò 1 äî 12!" << std::endl;
+			std::cout << "Ğ§Ğ¸ÑĞ»Ğ¾ Ğ´Ğ¾Ğ»Ğ¶Ğ½Ğ¾ Ğ±Ñ‹Ñ‚ÑŒ Ğ¾Ñ‚ 1 Ğ´Ğ¾ 12!" << std::endl;
 			continue;
 		}
 
 		switch (static_cast<months>(x))
 		{
 		case months::jan:
-			std::cout << "ßíâàğü";
+			std::cout << "Ğ¯Ğ½Ğ²Ğ°Ñ€ÑŒ";
 			break;
 		case months::feb:
-			std::cout << "Ôåâğàëü";
+			std::cout << "Ğ¤ĞµĞ²Ñ€Ğ°Ğ»ÑŒ";
 			break;
 		case months::mar:
-			std::cout << "Ìàğò";
+			std::cout << "ĞœĞ°Ñ€Ñ‚";
 			break;
 		case months::apr:
-			std::cout << "Àïğåëü";
+			std::cout << "ĞĞ¿Ñ€ĞµĞ»ÑŒ";
 			break;
 		case months::may:
-			std::cout << "Ìàé";
+			std::cout << "ĞœĞ°Ğ¹";
 			break;
 		case months::jun:
-			std::cout << "Èşíü";
+			std::cout << "Ğ˜ÑĞ½ÑŒ";
 			break;
 		case months::jul:
-			std::cout << "Èşëü";
+			std::cout << "Ğ˜ÑĞ»ÑŒ";
 			break;
 		case months::avg:
-			std::cout << "Àâãóñò";
+			std::cout << "ĞĞ²Ğ³ÑƒÑÑ‚";
 			break;
 		case months::sep:
-			std::cout << "Ñåíòÿáğü";
+			std::cout << "Ğ¡ĞµĞ½Ñ‚ÑĞ±Ñ€ÑŒ";
 			break;
 		case months::oct:
-			std::cout << "Îêòÿáğü";
+			std::cout << "ĞĞºÑ‚ÑĞ±Ñ€ÑŒ";
 			break;
 		case months::nov:
-			std::cout << "Íîÿáğü";
+			std::cout << "ĞĞ¾ÑĞ±Ñ€ÑŒ";
 			break;
 		case months::dec:
-			std::cout << "Äåêàáğü";
+			std::cout << "Ğ”ĞµĞºĞ°Ğ±Ñ€ÑŒ";
 			break;
 		default:
 			break;
